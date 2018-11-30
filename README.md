@@ -1,24 +1,23 @@
 # Testing Azure Functions
-This repository includes examples demonstrating how to run tests against a HTTP triggered and timer triggered function in both C# and JavaScript. The C# implementation uses [xUnit](https://xunit.github.io/) in [Visual Studio](https://visualstudio.microsoft.com/) and the JavaScript examples use [Jest](https://jestjs.io/) for automated tests and work best with [Visual Studio Code](https://code.visualstudio.com/).
+This repository includes examples demonstrating how to run tests against a HTTP-triggered and timer-triggered function in both C# and JavaScript. The C# implementation uses [xUnit](https://xunit.github.io/) in [Visual Studio](https://visualstudio.microsoft.com/) and the JavaScript examples use [Jest](https://jestjs.io/) for automated tests and works best with [Visual Studio Code](https://code.visualstudio.com/).
 
-There area two functions with associated tests available for both environments, these examples include:
+There are two functions with associated tests available for both environments, these examples include:
 
-- **HTTP triggered function**: The example demonstrates how to pass in query string parameters to the function. The C# example uses [xUnit's Theory](https://xunit.github.io/docs/getting-started-desktop#write-first-theory) feature to pass in a data set to the HTTP triggered function.
-
-- **Timer triggered function**: A non-HTTP triggered function (in the form of a timer trigged function) is included to demonstrate how to test a function that is not callable via a standard HTTP request.
+- **HTTP-triggered function**: The example demonstrates how to pass in query string parameters to the function. The C# example uses [xUnit's Theory](https://xunit.github.io/docs/getting-started-desktop#write-first-theory) feature to pass in a data set to the HTTP triggered function.
+- **Timer-triggered function**: A non-HTTP triggered function (in the form of a timer-triggered function) is included to demonstrate how to test a function that is not callable via a standard HTTP request.
 
 
 ## C# in Visual Studio
 
-To run the C# tests open the file *csharp-visualstudio\FunctionsTesting.sln* in Visual Studio. After you have restored all the dependencies, build and run all tests. The output from the tests should look something like the following:
+To run the C# tests open the file *csharp-visualstudio\FunctionsTesting.sln* in Visual Studio. After you have restored all the dependencies, build the solution and click **Run All**. The output from the tests should look something like the following:
 
 ![Visual Studio Tests](visual-studio-tests.png)
 
-To debug your tests, set a breakpoint in your code navigate to the Test Explorer. Then click Run... > Debug Last Run.
+To debug your tests, set a breakpoint in your code navigate to the **Test Explorer**. Then, click **Run... > Debug Last Run**.
 
 ## JavaScript in VS Code
 
-Open the folder *javascript-vscode* in VS Code. Run `npm install` to restore all dependencies and then run `npm test` to run the tests. The output from the tests should look something like the following:
+Open the folder *javascript-vscode* in VS Code. Run `npm install` to install the dependencies and then run `npm test` to run the tests. The output from the tests should look something like the following:
 
 ![VS Code Tests](vscode-tests.png)
 
