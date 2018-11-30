@@ -1,6 +1,13 @@
 # Testing Azure Functions
 This repository includes examples demonstrating how to run tests against a HTTP triggered and timer triggered function in both C# and JavaScript. The C# implementation uses [xUnit](https://xunit.github.io/) in [Visual Studio](https://visualstudio.microsoft.com/) and the JavaScript examples use [Jest](https://jestjs.io/) for automated tests and work best with [Visual Studio Code](https://code.visualstudio.com/).
 
+There area two functions with associated tests available for both environments, these examples include:
+
+- **HTTP triggered function**: The example demonstrates how to pass in query string parameters to the function. The C# example uses [xUnit's Theory](https://xunit.github.io/docs/getting-started-desktop#write-first-theory) feature to pass in a data set to the HTTP triggered function.
+
+- **Timer triggered function**: A non-HTTP triggered function (in the form of a timer trigged function) is included to demonstrate how to test a function that is not callable via a standard HTTP request.
+
+
 ## C# in Visual Studio
 
 To run the C# tests open the file *csharp-visualstudio\FunctionsTesting.sln* in Visual Studio. After you have restored all the dependencies, build and run all tests. The output from the tests should look something like the following:
@@ -15,7 +22,7 @@ Open the folder *javascript-vscode* in VS Code. Run `npm install` to restore all
 
 ![VS Code Tests](vscode-tests.png)
 
-To debug you tests, set a break point in your code and add the follow configuration to *launch.json* before starting a debug session.
+To debug you tests, set a break point in your code and add the following configuration to *launch.json* before starting a debug session.
 
 ```json
 {
