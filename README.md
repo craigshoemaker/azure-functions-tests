@@ -9,7 +9,7 @@ There are two functions with associated tests available for both environments, t
 
 ## C# in Visual Studio
 
-To run the C# tests open the file *csharp-visualstudio\FunctionsTesting.sln* in Visual Studio. After you have restored all the dependencies, build the solution and click **Run All**. The output from the tests should look something like the following:
+To run the C# tests open the file *csharp-visualstudio\FunctionsTesting.sln* in Visual Studio. After you have restored all the dependencies, build the solution and click **Run All** from the **Test Explorer**. The output from the tests should look something like the following:
 
 ![Visual Studio Tests](visual-studio-tests.png)
 
